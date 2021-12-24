@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
+  <link rel="stylesheet" href="rps.css">
+  <title> Play Rock,Paper,Scissors,Lizard,Spock Game </title>
+  <meta name="description" content="Rock,Paper,Scissors,Lizard,Spock Game"/>
+</head>
+<body>
+  <div class="flex-column main-container">
+  <section class="title-block flex-row">
+    <ul>
+      <li>Rock</li>
+      <li>Paper</li>
+      <li>Scissors</li>
+      <li>Lizard</li>
+      <li>Spock</li>
+    </ul>
+    <div class="score flex-column">
+      <div class="score-title">Score</div>
+      <div class="score-count"></div>
+    </div>
+  </section>
+
+  <section class="user-choice">
+    <div class="game-card scissors"><img src="images/icon-scissors.svg" alt=""></div>
+    <div class="game-card paper"><img src="images/icon-paper.svg" alt=""></div>
+    <div class="game-card rock"><img src="images/icon-rock.svg" alt=""></div>
+    <div class="game-card lizard"><img src="images/icon-lizard.svg" alt=""></div>
+    <div class="game-card spock"><img src="images/icon-spock.svg" alt=""></div>
+  </section>
+
+  <div class="section picked flex-row hidden">
+    <div class="choice flex-column">
+      <p>Your Choice</p>
+      <div class="user-pick"></div>
+    </div>
+    <div class="result">
+      <div class="title">You lose</div>
+      <button>Play again</button>
+    </div>   
+    <div class="choice flex-column">
+      <p>Computer Choice</p>
+      <div class="pc-pick"></div>
+    </div> 
+  </div>
+
+  <button class="rules-btn">Rules</button> 
+  <div class="modal-bg"></div>
+  <div class="modal">
+    <span class="close">
+      <img src="images/icon-close.svg" alt="close button">
+    </span>
+    <div class="title">Rules</div>
+    <div class="content">
+      <img src="images/rules.svg" alt="rules">
+    </div>
+  </div>
+  </div>
+  <script src="rps.js"></script>
+</body>
+</html>
